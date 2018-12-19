@@ -2,7 +2,6 @@ import numpy as np
 import os 
 
 
-np.random.seed(0)
 
 def print_matrices(inner = False):
 
@@ -21,9 +20,11 @@ def print_matrices(inner = False):
 
 def take_input():
 
-    prompt = "\nInput your answer as comma seperated values i.e.:\n" +\
-             "Answer = a, b, c, d --> Answer = np.array( [[a, b], [c, d]] )\n\n" +\
-             "Answer ="
+    prompt = ("\nInput your answer as comma seperated values i.e.:\n" 
+             + "Answer = a, b, c, d --> Answer = [[a, b],\n"  
+             + "                                  [c, d]]\n\n" 
+             + "Answer =")
+
     answer = input(prompt)
     a = []
     for num in answer.split(','):
@@ -65,13 +66,14 @@ if __name__ == '__main__':
 
     while True:
         os.system("clear")
-        A, B = print_matrices()
-        input_answer = take_input()
 
-        # check if correct
         if which_to_learn == 0:
+            A, B = print_matrices()
+            input_answer = take_input()
             correct = check(A, B, input_answer)
         else:
+            A, B = print_matrices(inner = True)
+            input_answer = take_input()
             correct = check(A, B, input_answer, inner = True)
 
         if correct:
