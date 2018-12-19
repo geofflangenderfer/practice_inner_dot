@@ -4,7 +4,7 @@ a simple user interface.
 
 ## Screenshot 
 
-[Opening Screen](sc.png)
+![Opening Screen](sc.png)
 ## How To Run
       python learn_inner.py
 
