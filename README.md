@@ -1,6 +1,6 @@
-# Learn dot product or inner product math
+# Learn dot or inner product math
 This is a quick program to practice the math behind dot and inner products with
-a simple user interface. Simply run:
+a simple user interface. 
 
 ## Screenshot 
 
