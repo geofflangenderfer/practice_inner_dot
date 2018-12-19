@@ -9,13 +9,16 @@ a simple user interface.
       python learn_inner.py
 
 ## Inner Product
-If you take the inner product, C, of two m,n matrices A and B, then:
+If you take the inner product, C, of two matrices A and B, then cols_A = cols_B
+so that each vector in this dot product will be the same size:
+
 
     C[i, j] = A[i, :] * B[j, :]
 
 
 ## Dot Product
-Likewise, if you take the dot product, C, of two m,n matrices A and B, then:
+Likewise, if you take the dot product, C, of two matrices A and B, then 
+cols_A = rows_B so that each vector in this dot product will be the same size:
 
     C[i, j] = A[i, :] * B[:, j]
 
