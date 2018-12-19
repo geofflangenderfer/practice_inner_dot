@@ -2,6 +2,10 @@
 This is a quick program to practice the math behind dot and inner products with
 a simple user interface. Simply run:
 
+## Screenshot 
+
+[Opening Screen](sc.png)
+## How To Run
       python learn_inner.py
 
 ## Inner Product
